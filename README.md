@@ -8,8 +8,6 @@ Path project in 102: `/home/dev-ic/ducdn/iceberg-kafka-connect`
 #### Post connector to kafka-connect
 ```
 curl -X POST -H "Content-Type:application/json" -d @$PWD/connector-config/iceberg-config-hive.json http://localhost:8083/connectors
-
-curl -X POST -H "Content-Type:application/json" -d @$PWD/connector-config/iceberg-config-hive.json http://10.159.19.102:8083/connectors
 ```
 #### Creating iceberg table in Trino
 ```
